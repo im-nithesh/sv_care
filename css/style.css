@@ -1,4 +1,9 @@
 /* Base */
+:root {
+  --primary: #4e897c;
+  --secondary: #f07f1b; 
+}
+
 html {
   overflow-x: hidden; }
 
@@ -21,6 +26,7 @@ a {
   -o-transition: .3s all ease;
   transition: .3s all ease; }
   a:hover {
+    color: var(--secondary);
     text-decoration: none; }
 
 h1, h2, h3, h4, h5,
@@ -69,19 +75,19 @@ body:after {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   .btn.btn-primary {
-    background: #f07f1b;
-    border-color: #f07f1b;
+    background: var(--secondary);
+    border-color: var(--secondary);
     color: #fff; }
     .btn.btn-primary:hover {
-      background: #f07f1b;
-      border-color: #f07f1b;
+      background: var(--secondary);
+      border-color: var(--secondary);
       color: #fff; }
     .btn.btn-primary.btn-black--hover:hover {
       background: #666666;
       color: #fff; }
   .btn.btn-white {
     border-color: #fff;
-    color: #f07f1b;
+    color: var(--secondary);
     background: #fff; }
     .btn.btn-white:hover {
       background: transparent;
@@ -92,7 +98,7 @@ body:after {
     color: #fff; }
     .btn.btn-outline-white:hover {
       background: #fff;
-      color: #f07f1b; }
+      color: var(--secondary); }
 
 .line-height-1 {
   line-height: 1 !important; }
@@ -105,7 +111,7 @@ body:after {
   border-radius: 4px;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
   .form-control:active, .form-control:focus {
-    border-color: #f07f1b; }
+    border-color: var(--secondary); }
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
@@ -259,7 +265,7 @@ body:after {
   .ul-check.success li:before {
     color: #71bc42; }
   .ul-check.primary li:before {
-    color: #f07f1b; }
+    color: var(--secondary); }
   .ul-check li.remove {
     text-decoration: line-through;
     color: #dee2e6; }
@@ -299,7 +305,7 @@ body:after {
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active {
-      color: #f07f1b;
+      color: var(--secondary);
       display: inline-block;
       padding: 20px 20px; }
     .site-navbar .site-navigation .site-menu a {
@@ -313,7 +319,7 @@ body:after {
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #f07f1b; }
+          color: var(--secondary); }
       .site-navbar .site-navigation .site-menu > li.social > a {
         top: 15px;
         display: inline-block;
@@ -330,7 +336,7 @@ body:after {
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
         .site-navbar .site-navigation .site-menu > li.social > a:hover {
-          color: #f07f1b; }
+          color: var(--secondary); }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -352,7 +358,7 @@ body:after {
         top: 100%;
         position: absolute;
         text-align: left;
-        border-top: 2px solid #f07f1b;
+        border-top: 2px solid var(--secondary);
         -webkit-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
         padding: 0px 0;
@@ -386,7 +392,7 @@ body:after {
           transition: 0s all;
           color: #000; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown .active {
-          color: #f07f1b !important; }
+          color: var(--secondary) !important; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
           list-style: none;
           padding: 0;
@@ -405,7 +411,7 @@ body:after {
             left: 100%;
             top: 0; }
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
-        color: #f07f1b; }
+        color: var(--secondary); }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
         cursor: pointer; }
         .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown, .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown, .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
@@ -483,16 +489,16 @@ body:after {
       position: relative;
       color: #212529; }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #f07f1b; }
+        color: var(--secondary); }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li .active {
-        color: #f07f1b; }
+        color: var(--secondary); }
     .site-mobile-menu .site-nav-wrap .social {
       display: inline-block; }
       .site-mobile-menu .site-nav-wrap .social:hover {
-        color: #f07f1b; }
+        color: var(--secondary); }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -589,7 +595,7 @@ body:after {
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
       color: #000 !important; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
-        color: #f07f1b !important; }
+        color: var(--secondary) !important; }
 
 /* Blocks */
 .slide-item, .cover {
@@ -640,7 +646,7 @@ body:after {
         right: 0;
         height: 3px;
         margin-top: -3px;
-        background: #f07f1b; }
+        background: var(--secondary); }
     .feature-v1 .pagination-item > .icon-wrap {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 90px;
@@ -698,7 +704,7 @@ body:after {
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px; }
   .custom-media .text {
-    background: #f07f1b;
+    background: var(--secondary);
     padding: 20px; }
     .custom-media .text h3 {
       color: #fff;
@@ -770,7 +776,7 @@ body:after {
     text-align: center;
     font-size: 13px; }
     .blog-entry .post-meta [class*="icon-"] {
-      color: #f07f1b; }
+      color: var(--secondary); }
     .blog-entry .post-meta > span {
       margin: 8px; }
 
