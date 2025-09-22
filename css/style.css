@@ -1358,6 +1358,7 @@ body:after {
   .widget-2,
   .widget-3,
   .widget-4 {
+    padding-left: 0;
     padding-top: 20px;
     border-left: none;
   }
